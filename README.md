@@ -1,3 +1,3 @@
-# Server-Config
+# Scripts
 
-this is just a compilation of commands / scripts to help me setup future servers
+this is just a collection of commands / scripts / configs that are useful
