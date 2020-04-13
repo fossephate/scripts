@@ -8,6 +8,8 @@ usermod -aG sudo fosse
 # copy ssh keys from root:
 mkdir -p /home/fosse/.ssh
 cp ~/.ssh/authorized_keys /home/fosse/.ssh/authorized_keys
+chown -R fosse:fosse /home/fosse/.ssh/
+chmod 700 /home/fosse/.ssh/
 
 # remove root ssh key:
 rm ~/.ssh/authorized_keys
