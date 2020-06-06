@@ -1,0 +1,15 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-on-ubuntu-14-04
+sudo apt install postfix
+
+
+sudo nano /etc/postfix/main.cf
+	myhostname = example.com
+	virtual_alias_maps = hash:/etc/postfix/virtual
+
+sudo nano /etc/postfix/virtual
+	user@example.com username
+
+sudo postmap /etc/postfix/virtual
+sudo service postfix restart
+
+# mail delivers to /var/mail/<user>
